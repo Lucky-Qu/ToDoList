@@ -6,6 +6,31 @@
     <title>Todo List</title>
 </head>
 <body>
+<div class="container">
+    <!-- 左侧栏 -->
+    <div class="sidebar">
+        <div class="user">
+            <div style="display:flex;align-items:center;">
+                <div class="avatar"></div>
+                <span class="username">用户名</span>
+            </div>
+            <span class="settings">🔧</span>
+        </div>
+
+        <div class="add-todo">
+            <div class="add-btn" onclick="addTodo()">+</div>
+            <input type="text" class="add-input" id="todoInput" placeholder="添加待办事项">
+        </div>
+    </div>
+
+    <!-- 右侧主界面 -->
+    <div class="main">
+        <div class="title">今天</div>
+        <div class="todo-list" id="todoList">
+            <!-- 待办项会在这里生成 -->
+        </div>
+    </div>
+</div>
 
 <script src="../script/mainPage.js"></script>
 </body>
